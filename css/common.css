@@ -13,6 +13,9 @@ html {
 --title-text-color: #757575;
 --accnent-color: #2196F3;
 --primary-white-color: #FFFFFF;
+
+/* кубик для анімації  */
+--cubic-time: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -90,7 +93,7 @@ body {
     border-radius: 2px;
     background-color: var(--accnent-color);
     opacity: 0;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity var(--cubic-time);
 }
 
 .link-nav:hover::after,
@@ -124,7 +127,7 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--cubic-time);
 }
     
 .site-nav .link:hover, 
@@ -160,7 +163,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--cubic-time);
 }
 
 .mail:hover,
@@ -199,7 +202,7 @@ body {
     margin-top: 9px;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--cubic-time);
 }
 
 .address.maps {
@@ -229,6 +232,7 @@ body {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
+    text-transform: uppercase;
     color: var(--primary-white-color);
 }
 
@@ -242,4 +246,43 @@ body {
 
 .socials-icon.changes {
     fill: #FFFFFF;
+}
+
+/* Підписка на розсилку  */
+
+.subscription {
+    margin-left: 80px;
+}
+
+.subscription-text {
+    display: block;
+}
+
+.subscription-form {
+    display: flex;
+}
+
+.subscription-input {
+    display: block;
+    padding: 15px 16px;
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    outline: navy;
+    transition: border-color var(--cubic-time);
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: var(--primary-white-color);
+    background: #2F303A;
+}
+
+.subscription-input:focus {
+    border-color: var(--accnent-color);
+}
+
+.button-icon {
+    margin-left: 10px;
 }

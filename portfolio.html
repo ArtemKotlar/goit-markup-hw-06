@@ -46,7 +46,7 @@
 
     <main>
         <section class="section container">
-            <h1 class="none">Фільтир</h1>
+            <h1 class="visually-hidden">Фільтир</h1>
             <ul class="filter list">
                 <li class="item"><button class="button" type="button">Усі</button></li>
                 <li class="item"><button class="button" type="button">Веб-сайти</button></li>
@@ -237,6 +237,20 @@
             </ul>
         </div>
 
+        <div class="subscription">
+            <h3 class="subscription-text join-text">Підпишіться на розсилку</h3>
+            <form class="subscription-form">
+                <label class="subscription-label" for="mail"></label>
+                <input class="subscription-input" type="email" name="mail" id="mail" placeholder="E-mail" required>
+        
+                <button class="button-primaru subscription" type="submit">Підписатися
+                    <svg class="button-icon" width="24" height="24">
+                        <use href="./images/icons.svg#telegram"></use>
+                    </svg>
+                </button>
+            </form>
+        </div>
+        
     </div>
 </footer>
 
