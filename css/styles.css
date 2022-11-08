@@ -254,18 +254,18 @@ img {
 
 .socials {
     display: flex;
-    margin-left: 32px;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 30px;
 }
 
-.socials-item:nth-child(4n) {
-    margin-right: 0;
+.socials-team:not(:last-child) {
+    margin-right: 10px;
 }
 
 .socials-item {
     width: 44px;
     height: 44px;
-    margin-right: 10px;
     border: none;
     display: flex;
     align-items: center;
